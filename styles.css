@@ -404,10 +404,10 @@ footer p{
         display:flex;
         justify-content: space-between;
         align-items: center;
-        padding:20px 0px;
+        padding:2px 0px;
         cursor:pointer;
         font-family: 'Noto Sans', sans-serif;
-        margin:0px auto;
+        margin:0px;
     }
     .logo{
         font-size:20px;
