@@ -7,10 +7,11 @@
 html{
     scroll-behavior:smooth;
     width:100%;
+    background-color:rgb(0, 0, 0);
 }
 
 body{
-    width:100%;
+    width:90%;
 }
 
 /*stylings for top display sectin starts here*/
@@ -387,10 +388,29 @@ footer p{
 /*media */
 
 @media screen and (max-width:500px){
-.all{
-    display:block;
+
+    
+    .logo{
+        font-size:25px;
+    }
+    nav li a{
+        font-size:12px;
+        padding:2px 10px;
+
+    }
+    .profile{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
+    .all{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
 }
-.box{
-    display:block;
-}
+    .box{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+    }
 }
