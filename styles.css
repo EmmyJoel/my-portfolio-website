@@ -616,7 +616,8 @@ footer p{
         font-size:12px;
         padding:4px 10px;
         position:fixed;
-        right:0;
+        right:2px;
+        z-index:3;
     }
     .profile{
         display:flex;
