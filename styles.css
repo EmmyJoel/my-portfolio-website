@@ -11,7 +11,8 @@ html{
 }
 
 body{
-    width:100%;
+    width:90%;
+    margin:0px auto;
 }
 
 /*stylings for top display sectin starts here*/
@@ -21,10 +22,11 @@ body{
     height:100vh;
     padding:0px 20px;
     background-color:rgb(0, 0, 0);
-    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.75), rgba(0,0,0,.9)), url("./images/my-dp.jpg");
+    background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.75), rgba(0,0,0,.9)), url("./images/background-img.jpg");
     background-position: right;
     background-repeat: no-repeat;
     background-blend-mode:luminosity;
+
 } 
 nav{
     display:flex;
@@ -34,7 +36,7 @@ nav{
     cursor:pointer;
     font-family: 'Noto Sans', sans-serif;
     margin:0px auto;
-    box-shadow:0px 0px 5px black, 0px 0px 70px rgb(0, 41, 155), 0px 0px 5px rgb(61, 225, 247);
+    box-shadow:0px 0px 5px black, -5px 0px 80px rgb(0, 41, 155), 0px 0px 5px rgb(61, 225, 247);
 }
 .logo{
     color:rgb(61, 225, 247);
@@ -408,14 +410,24 @@ footer p{
 
 @media screen and (max-width:950px) and (min-width:600px){
 
-    
+    body{
+        width:90%;
+    }
+
     .main-display{
-        padding:20px 20px;
+        width:100%;
+        height:100vh;
+        padding:0px 0px;
+        background-color:rgb(0, 0, 0);
+        background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(1, 3, 19,.65), rgb(0,0,0,)), url("./images/background-img.jpg");
         background-size:100%;
+        background-position:right;
+        background-repeat: no-repeat;
+        background-blend-mode:luminosity;
     } 
     nav{
         padding:10px 10px;
-        margin:5px 0px;
+        margin:0px 0px;
     }
     nav ul{
         display:grid;
@@ -434,8 +446,8 @@ footer p{
         font-weight:600;
         padding:3px 10px;
         position:relative;
-        top:-25px;
-        left:-4%;
+        top:-20px;
+
     }
     .logo img{
         width:12px; 
@@ -446,9 +458,6 @@ footer p{
     .subscribe{
         font-size:14px;
         padding:5px 10px;
-        position:relative;
-        top:-25px;
-        right:-4%;
     }
     .profile{
         display:flex;
@@ -456,6 +465,7 @@ footer p{
         align-items:left;
         position:absolute;
         top:80%;
+        left:4%;
     }
     .profile h1{    
         font-family:'Roboto Slab', serif;
@@ -554,15 +564,18 @@ footer p{
 
 @media screen and (max-width:600px) and (min-width:250px){
 
-    
+    body{
+        width:100%;
+    }
+
     .main-display{
         width:100%;
         height:100vh;
         padding:0px 0px;
         background-color:rgb(0, 0, 0);
-        background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(1, 3, 19,.65), rgb(0,0,0,)), url("./images/my-dp.jpg");
+        background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(1, 3, 19,.65), rgb(0,0,0,)), url("./images/background-img.jpg");
         background-size:100%;
-        background-position:right center;
+        background-position:right;
         background-repeat: no-repeat;
         background-blend-mode:luminosity;
     } 
@@ -600,7 +613,7 @@ footer p{
     }
     .subscribe{
         font-size:12px;
-        padding:2px 10px;
+        padding:4px 10px;
     }
     .profile{
         display:flex;
@@ -608,6 +621,7 @@ footer p{
         align-items:left;
         position:absolute;
         top:80%;
+        left:2%;
     }
     .profile h1{    
         font-family:'Roboto Slab', serif;
@@ -646,19 +660,21 @@ footer p{
         align-items:center;
     }
     .about img{
-        width:60%;
+        width:80%;
     }
     .about-text{
-        width:90%;
+        width:100%;
         padding:20px 0px;
     }
     .about-text h2{
+        width:100%;
         font-size:25px;
         margin:0px 0px 20px;
         font-weight:300;
     }
     .about-text h5{
-        font-size:18px;
+        width:100%;
+        font-size:14px;
         margin:0px 0px 20px;
         font-weight:300;
     }
@@ -670,6 +686,15 @@ footer p{
         position:relative;
         font-size:16px;
     }
+    .title h2{
+    color:rgb(162, 192, 192);
+    width:100%;
+    font-size:30px;
+    font-weight:300;
+    font-family:'Roboto Slab', serif;
+    margin:30px 0px 50px;
+    text-align:center;
+}
     .card{
         width:100%;
         margin:20px 0px;
@@ -693,10 +718,15 @@ footer p{
         font-size:15px;
         line-height:1.2em;
         letter-spacing:0px;
-        margin-bottom:80px;
+        margin-bottom:100px;
     }
     .socials{
+        margin-top:40px;
         margin-bottom:10px;
+    }
+    .copyright{
+        margin-bottom:20px;
+        margin-top:0px;
     }
 }
 
