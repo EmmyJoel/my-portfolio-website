@@ -43,7 +43,7 @@ nav{
     padding:0px 10px;
     transition: .2s;
     border-radius:10px;
-    box-shadow:0px 0px 5px black, 0px 0px 15px rgb(0, 41, 155), 0px 0px 15px rgb(61, 225, 247);
+    box-shadow:0px 0px 5px black, 2px 2px 100px rgb(0, 41, 155), 0px 0px 5px rgb(61, 225, 247);
 }
 .logo img{
     width:20px; 
@@ -100,20 +100,20 @@ nav li a:hover{
     text-align:center;
     transform:translateY(-50%);
 }
-h1{    
+.profile h1{    
     font-family:'Roboto Slab', serif;
     margin:0px 0px 8px;
     font-size:70px;
     font-weight:600;
     letter-spacing:-3px;
 }
-h3{
+.profile h3{
     font-family:'Noto Sans', sans-serif;
     margin-bottom:10px;
     font-weight:500;
     color:rgb(162, 192, 192);
 }
-h4{
+.profile h4{
     font-family:'Noto Sans', sans-serif;
     color:rgb(162, 192, 192);
     text-align:left;
@@ -161,21 +161,24 @@ h4{
 /* about section design starts here */
 
 .about{
-    background-image:linear-gradient(rgba(0, 0, 0, 0.938), rgba(0, 0, 0), rgba(0, 0, 0, 0.938));
+    background-color:rgba(20, 24, 37, 0.815);
     width:100%;
-    padding:80px 20px;
+    padding:100px 10px;
 }
 .all{
     display:flex;
     align-items:center;
     justify-content: space-evenly;
-    width:80%;
+    width:100%;
     margin: 0 auto;
+    border:1px dotted  rgb(162, 192, 192);
+    border-radius:20px;
+    padding:40px 10px;
 }
 .about img{
     width:400px;
     height:auto;
-    opacity:.7;
+    opacity:.68;
     border-radius:200px;
 }
 .about-text{
@@ -254,7 +257,7 @@ button:hover{
     margin:0px auto;
 }
 .card{
-    min-width:340px;
+    min-width:300px;
     background-color: rgba(2, 2, 36, 0.322);
     margin:0px 20px;
     padding:20px;
@@ -263,8 +266,8 @@ button:hover{
 }
 .card i{
     font-size:40px;
-    color: rgb(61, 225, 247);
-    margin:0px 5px 10px;
+    color: rgb(0, 221, 203);
+    margin:0px 0px 10px;
 }
 .card h5{
     font-family:'Roboto Slab', serif;
@@ -315,8 +318,9 @@ button:hover{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    background-color:rgb(2, 2, 26);
+    background-color:rgba(20, 24, 37, 0.815);
     padding:50px 20px;
+    text-align:center;
 }
 .contact-me h2{
     font-size:30px;
@@ -352,12 +356,11 @@ footer{
     width:100%;
     background-image: linear-gradient(rgb(2, 2, 26), rgba(0, 0, 0, 0.938));
     text-align:center;
-    padding:80px 20px 40px;
-    height:400px;
+    padding:100px 20px 40px;
+    min-height:400px;
     display:flex;
     flex-direction:column;
-    justify-content:flex-end;
-    align-items: center;;
+    align-items: center;
 }
 footer h2{
     font-family:'Natos Sans', sans-serif;
@@ -380,11 +383,11 @@ footer p{
 }
 .fa-brands{
     margin:15px;
-    font-size:25px;
+    font-size:22px;
     transition: transform .3s;
 }
 .fa-brands:hover{
-    transform:scale(1.25);
+    transform:scale(1.5);
 }
 .copyright{
     font-size:15px; 
@@ -393,7 +396,149 @@ footer p{
 
 /*media */
 
-@media screen and (max-width:500px){
+@media screen and (max-width:950px) and (min-width:600px){
+
+    
+    .main-display{
+        padding:20px 20px;
+        background-size:100%;
+    } 
+    nav{
+        padding:10px 10px;
+        margin:5px 0px;
+    }
+    nav ul{
+        display:grid;
+        grid-template-columns:auto auto;
+        grid-template-rows:50px;
+        align-items:center;
+        justify-content:center;
+    }
+    nav li a{
+        font-size:14px;
+        padding:5px 12px;
+        margin:0px 30px;
+    }
+    .logo{
+        font-size:20px;
+        font-weight:600;
+        padding:3px 10px;
+        position:relative;
+        top:-25px;
+        left:-4%;
+    }
+    .logo img{
+        width:12px; 
+        height:12px; 
+        block-size:12px; 
+        border-radius:200px;
+    }
+    .subscribe{
+        font-size:14px;
+        padding:5px 10px;
+        position:relative;
+        top:-25px;
+        right:-4%;
+    }
+    .profile{
+        display:flex;
+        flex-direction:column;
+        align-items:left;
+        position:absolute;
+        top:80%;
+    }
+    .profile h1{    
+        font-family:'Roboto Slab', serif;
+        margin:0px;
+        font-size:35px;
+        font-weight:600;
+        letter-spacing:1px;
+    }
+    .profile h3{
+        font-family:'Noto Sans', sans-serif;
+        margin-bottom:20px;
+        font-weight:500;
+        color:rgb(162, 192, 192);
+    }
+    .profile h4{
+        font-family:'Noto Sans', sans-serif;
+        color:rgb(162, 192, 192);
+        text-align:left;
+        font-weight:500;
+        font-size:20px;
+        letter-spacing:1.5px;
+    }
+    .newsletter form{
+        width:90%;
+        max-width:100%;
+    }
+    .all{
+        display:flex;
+        align-items:center;
+        width:100%;
+    }
+    .about img{
+        width:50%;
+    }
+    .about-text{
+        width:90%;
+        padding:20px 0px;
+    }
+    .about-text h2{
+        font-size:25px;
+        margin:0px 0px 20px;
+        font-weight:300;
+    }
+    .about-text h5{
+        font-size:18px;
+        margin:0px 0px 20px;
+        font-weight:300;
+    }
+    .about-text p{
+        font-weight:100;
+        font-size:14px;
+    }
+    button{
+        position:relative;
+        font-size:16px;
+    }
+    .box{
+        display:grid;
+        grid-template-columns:auto auto;
+        column-gap:30px;
+        align-items:center;
+    }
+    .card{
+        width:100%;
+        margin:20px 0px;
+    }
+    .para p{
+        font-weight:100;
+        font-size:14px;
+    }
+    .para a{
+        font-size:16px;
+        margin:0px;
+        font-weight:600;
+    }
+    .contact-me h2{
+    font-size:20px;
+    } 
+    .contact-me a{
+        font-weight:500;
+    }
+    footer p{
+        font-size:15px;
+        line-height:1.2em;
+        letter-spacing:0px;
+        margin-bottom:80px;
+    }
+    .socials{
+        margin-bottom:10px;
+    }
+}
+
+@media screen and (max-width:600px) and (min-width:250px){
 
     
     .main-display{
@@ -408,63 +553,135 @@ footer p{
         background-blend-mode:luminosity;
     } 
     nav{
-        display:flex;
-        justify-content: space-between;
-        align-items: center;
-        padding:2px 0px;
-        cursor:pointer;
-        font-family: 'Noto Sans', sans-serif;
-        margin:0px;
+        padding:10px 10px;
+        margin:2px;
+    }
+    nav ul{
+        display:grid;
+        grid-template-columns:auto auto auto;
+        grid-template-rows:50%;
+        align-items:center;
+        justify-content:center;
+        position:absolute;
+        left:0;
+        top:60px;
+    }
+    nav li a{
+        font-size:13px;
+        padding:2px 10px;
+        margin:20px 10px;
     }
     .logo{
-        font-size:20px;
-        display:flex;
+        font-size:18px;
+        font-weight:400;
+        padding:3px;
+        box-shadow:0px 0px 5px black, 0px 0px 50px rgb(0, 41, 155), 0px 0px 5px rgb(61, 225, 247);
     }
     .logo img{
-        width:15px; 
-        height:15px; 
-        block-size:15px; 
+        width:12px; 
+        height:12px; 
+        block-size:12px; 
         border-radius:200px;
     }
     .subscribe{
-        font-size:15px;
-        padding:2px 10px;
-    }
-    nav ul li{
-        display:flex;
-    }
-    nav li a{
         font-size:12px;
         padding:2px 10px;
     }
     .profile{
         display:flex;
         flex-direction:column;
-        align-items:center;
-        position:relative;
+        align-items:left;
+        position:absolute;
+        top:80%;
+    }
+    .profile h1{    
+        font-family:'Roboto Slab', serif;
+        margin:0px;
+        font-size:35px;
+        font-weight:600;
+        letter-spacing:1px;
+    }
+    .profile h3{
+        font-family:'Noto Sans', sans-serif;
+        margin-bottom:20px;
+        font-weight:500;
+        color:rgb(162, 192, 192);
+    }
+    .profile h4{
+        font-family:'Noto Sans', sans-serif;
+        color:rgb(162, 192, 192);
+        text-align:left;
+        font-weight:500;
+        font-size:20px;
+        letter-spacing:1.5px;
+    }
+    .newsletter form{
+        width:90%;
+        max-width:100%;
     }
     .all{
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content: center;
         width:100%;
 }
     .box{
         display:flex;
         flex-direction:column;
         align-items:center;
-        justify-content: center;
     }
     .about img{
-        width:100%;
+        width:60%;
     }
     .about-text{
+        width:90%;
+        padding:20px 0px;
+    }
+    .about-text h2{
+        font-size:25px;
+        margin:0px 0px 20px;
+        font-weight:300;
+    }
+    .about-text h5{
+        font-size:18px;
+        margin:0px 0px 20px;
+        font-weight:300;
+    }
+    .about-text p{
+        font-weight:100;
+        font-size:14px;
+    }
+    button{
         position:relative;
-        width:100%;
+        font-size:16px;
     }
     .card{
         width:100%;
         margin:20px 0px;
     }
+    .para p{
+        font-weight:100;
+        font-size:14px;
+    }
+    .para a{
+        font-size:16px;
+        margin:0px;
+        font-weight:600;
+    }
+    .contact-me h2{
+    font-size:20px;
+    } 
+    .contact-me a{
+        font-weight:500;
+    }
+    footer p{
+        font-size:15px;
+        line-height:1.2em;
+        letter-spacing:0px;
+        margin-bottom:80px;
+    }
+    .socials{
+        margin-bottom:10px;
+    }
 }
+
