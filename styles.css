@@ -45,6 +45,12 @@ nav{
     border-radius:10px;
     box-shadow:0px 0px 5px black, 0px 0px 15px rgb(0, 41, 155), 0px 0px 15px rgb(61, 225, 247);
 }
+.logo img{
+    width:20px; 
+    height:20px; 
+    block-size:20px; 
+    border-radius:200px;
+}
 span{
     color:rgb(61, 225, 247);
 }
@@ -396,7 +402,8 @@ footer p{
         padding:0px 0px;
         background-color:rgb(0, 0, 0);
         background-image: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.75), rgba(0,0,0,.9)), url("./images/my-dp.jpg");
-        background-position:right;
+        background-size:100%;
+        background-position:center;
         background-repeat: no-repeat;
         background-blend-mode:luminosity;
     } 
@@ -413,19 +420,28 @@ footer p{
         font-size:20px;
         display:flex;
     }
+    .logo img{
+        width:15px; 
+        height:15px; 
+        block-size:15px; 
+        border-radius:200px;
+    }
     .subscribe{
         font-size:15px;
         padding:2px 10px;
     }
+    nav ul li{
+        display:flex;
+    }
     nav li a{
         font-size:12px;
         padding:2px 10px;
-
     }
     .profile{
         display:flex;
         flex-direction:column;
         align-items:center;
+        position:relative;
     }
     .all{
         display:flex;
