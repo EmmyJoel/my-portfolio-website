@@ -57,7 +57,9 @@ nav{
 span{
     color:rgb(61, 225, 247);
 }
-nav ul{align-self:flex-end;
+nav ul{
+    align-self:flex-end;
+    justify-self:center;
 }
 nav ul li{
     display:inline-block;
@@ -93,7 +95,7 @@ nav li a:hover{
     transition: transform .4s;
 }
 .subscribe:hover{
-    transform:scale(1.15);
+    transform:scale(1.2);
 }
 .profile {
     font-family:'Roboto Slab', serif;
@@ -408,10 +410,10 @@ footer p{
 
 /*media */
 
-@media screen and (max-width:950px) and (min-width:600px){
+@media screen and (max-width:1140px) and (min-width:600px){
 
     body{
-        width:90%;
+        width:95%;
     }
 
     .main-display{
@@ -420,7 +422,7 @@ footer p{
         padding:0px 0px;
         background-color:rgb(0, 0, 0);
         background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(1, 3, 19,.65), rgb(0,0,0,)), url("./images/background-img.jpg");
-        background-size:100%;
+        background-size:60%;
         background-position:right;
         background-repeat: no-repeat;
         background-blend-mode:luminosity;
@@ -464,8 +466,8 @@ footer p{
         flex-direction:column;
         align-items:left;
         position:absolute;
-        top:80%;
-        left:4%;
+        top:70%;
+        left:8%;
     }
     .profile h1{    
         font-family:'Roboto Slab', serif;
@@ -536,7 +538,7 @@ footer p{
         font-size:22px;
     }
     .para p{
-        font-weight:100;
+        font-weight:200;
         font-size:14px;
         line-height:1.2em;
     }
@@ -567,14 +569,13 @@ footer p{
     body{
         width:100%;
     }
-
     .main-display{
         width:100%;
         height:100vh;
         padding:0px 0px;
         background-color:rgb(0, 0, 0);
         background-image: linear-gradient(90deg, rgba(0,0,0,.1), rgba(1, 3, 19,.65), rgb(0,0,0,)), url("./images/background-img.jpg");
-        background-size:100%;
+        background-size:80% 80%;
         background-position:right;
         background-repeat: no-repeat;
         background-blend-mode:luminosity;
@@ -704,7 +705,7 @@ footer p{
         margin:20px 0px;
     }
     .para p{
-        font-weight:100;
+        font-weight:200;
         font-size:14px;
     }
     .para a{
